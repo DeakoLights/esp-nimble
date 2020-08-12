@@ -42,19 +42,19 @@ modlog_dummy(const char *msg, ...)
 
 #ifdef ESP_PLATFORM
 #define MODLOG_DEBUG(ml_mod_, ml_msg_, ...) \
-    esp_log_write(ESP_LOG_DEBUG, "NimBLE",ml_msg_, ##__VA_ARGS__)
+    ESP_LOGD("NimBLE",ml_msg_, ##__VA_ARGS__)
 
 #define MODLOG_INFO(ml_mod_, ml_msg_, ...) \
-    esp_log_write(ESP_LOG_INFO, "NimBLE",ml_msg_, ##__VA_ARGS__)
+    ESP_LOGI("NimBLE",ml_msg_, ##__VA_ARGS__)
 
 #define MODLOG_WARN(ml_mod_, ml_msg_, ...) \
-    esp_log_write(ESP_LOG_WARN, "NimBLE",ml_msg_, ##__VA_ARGS__)
+    ESP_LOGW("NimBLE",ml_msg_, ##__VA_ARGS__)
 
 #define MODLOG_ERROR(ml_mod_, ml_msg_, ...) \
-    esp_log_write(ESP_LOG_ERROR, "NimBLE",ml_msg_, ##__VA_ARGS__)
+    ESP_LOGE("NimBLE",ml_msg_, ##__VA_ARGS__)
 
 #define MODLOG_CRITICAL(ml_mod_, ml_msg_, ...) \
-    esp_log_write(ESP_LOG_ERROR, "NimBLE",ml_msg_, ##__VA_ARGS__)
+    ESP_LOGE("NimBLE",ml_msg_, ##__VA_ARGS__)
 
 #else
 
