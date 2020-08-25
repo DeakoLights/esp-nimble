@@ -308,7 +308,7 @@ extern "C" {
 
 /* Advertising interval */
 #define BLE_HCI_ADV_ITVL                    (625)           /* usecs */
-#define BLE_HCI_ADV_ITVL_MIN                (32)            /* units */
+#define BLE_HCI_ADV_ITVL_MIN                (16)            /* units */
 #define BLE_HCI_ADV_ITVL_MAX                (16384)         /* units */
 #define BLE_HCI_ADV_ITVL_NONCONN_MIN        (160)           /* units */
 
